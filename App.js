@@ -6,8 +6,9 @@ import AudioFile from './assets/counting.m4a';
 
 
 export default function App() {
+ const pathfileurl = 'https://ia800204.us.archive.org/11/items/hamlet_0911_librivox/hamlet_act1_shakespeare.mp3';
   return (
-
+     
         <View style={[styles.StandardContainer, {
                 flex: 0,
                 flexDirection: "column",
@@ -35,7 +36,7 @@ export default function App() {
 
             </View>
 
-            <AudioSlider audio={AudioFile}/>
+            <AudioSlider audio={pathfileurl}/>
 
         </View>
   );
